@@ -41,7 +41,6 @@ function promptButtonClicked() {
 		ul.appendChild(li); } 	
 	}
 function confirmButtonClicked() {  
-	document.getElementById("changeButton").style.visibility="visible";
 	/*Confirm displays a message and returns true if OK is clicked and a false if Cancel is clicked. 	You might use this for simple input */  
 	var bool=confirm("Are you sure?");
 
@@ -59,6 +58,7 @@ function confirmButtonClicked() {
 		/*retrieve the <div> element with id= “content” and add to it the new <p> element*/
 		var div=document.getElementById("content");
 		div.appendChild(p); } 	
+		document.getElementById("changeButton").style.visibility="visible";
 	}
 }
 function initBody() {
