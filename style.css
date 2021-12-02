@@ -110,3 +110,23 @@ button.back{
 header.secondary{
 	padding-left: 75px;
 }
+button {
+	/*center the button*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+ 
+	/* add your code to set top and bottom margins */
+	margin-top: auto;
+	margin-bottom: auto;
+
+ 
+	/*add an image to your button*/
+	border-image: url("orangeButton.png");
+	background: url("orangeButton.png");
+	background-size: cover;
+
+	/*set width and height for the button*/
+	height: auto;
+	width: auto;
+}
