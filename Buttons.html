@@ -18,7 +18,7 @@
 	<button id="alertButton" onclick="alert('welcome!');">Alert</button>
 	<button id="promptButton" onclick="promptButtonClicked();">Prompt</button>
 	<button id="confirmationButton" onclick="confirmButtonClicked();">Confirm</button>
-	<button id="changeButton" style="visibility: hidden;">Change bike</button> 	
+	<button id="changeButton" style="visibility: hidden" onclick="changeButton();">Change bike</button> 	
 </div> 	
 <div id="content"> 	  
 	<img id="bikeImg" src="">
@@ -70,7 +70,7 @@ function initBody() {
 	document.getElementById("changeButton").style.visibility="hidden";  	 
 }
 function changeBike(){
-	var i = Math.floor(Math.random() * bikeArr.length);
+	var randInt = Math.floor(Math.random() * bikeArr.length);
 	var img = document.getElementById("bikeImg");
 	img.src = bikeArr[i];
 }
