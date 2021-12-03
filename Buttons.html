@@ -5,6 +5,9 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
     <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script>
+	var bikeArr=new Array("Bike.jpg","bike1.jpg","Bike2.jpg","Bike3.jpg","Bike4.jpg");
+    </script>
     <title> BIKE WPI </title>
 </head>
 
@@ -60,15 +63,16 @@ function confirmButtonClicked() {
 		var div=document.getElementById("content");
 		div.appendChild(p); 
 	} 	
-		document.getElementById("changeButton").style.visibility="visible";
+	document.getElementById("changeButton").style.visibility="visible";
 }
 function initBody() {
 	// retrieve the changeButton element from the DOM and hide it
 	document.getElementById("changeButton").style.visibility="hidden";  	 
 }
+function changeBike(){
+	var i = Math.floor(Math.random() * 5);
+	div.getElementById("img").src = document.getElementById("bikeArr[i]");
+}
 </script>
 </body>
-
-
-
 </html>
