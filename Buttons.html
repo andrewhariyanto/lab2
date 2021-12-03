@@ -70,8 +70,9 @@ function initBody() {
 	document.getElementById("changeButton").style.visibility="hidden";  	 
 }
 function changeBike(){
-	var i = Math.floor(Math.random() * 5);
-	div.getElementById("img").src = document.getElementById("bikeArr[i]");
+	var i = Math.floor(Math.random() * bikeArr.length);
+	var img = document.getElementById("bikeImg");
+	img.src = bikeArr[i];
 }
 </script>
 </body>
