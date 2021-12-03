@@ -12,9 +12,9 @@
 <header class="secondary"> Reserve your bike</header>
 <button class="back" onClick="location.href='index.html';">Back</button>
 <div id="buttons">
-	<button id="alertButton" onClick="alert('welcome!');">Alert</button>
-	<button id="promptButton" onClick="promptButtonClicked();">Prompt</button>
-	<button id="confirmationButton" onClick="confirmButtonClicked();">Confirm</button>
+	<button id="alertButton" onclick="alert('welcome!');">Alert</button>
+	<button id="promptButton" onclick="promptButtonClicked();">Prompt</button>
+	<button id="confirmationButton" onclick="confirmButtonClicked();">Confirm</button>
 	<button id="changeButton" style="visibility: hidden;">Change bike</button> 	
 </div> 	
 <div id="content"> 	  
@@ -38,8 +38,9 @@ function promptButtonClicked() {
 		li.innerHTML=destination;
 		/*Retrieve an element from the DOM. We then add our new element as a child to this element.*/
 			var ul=document.getElementById("orderedBike");
-		ul.appendChild(li); } 	
-	}
+		ul.appendChild(li); 
+	} 	
+}
 function confirmButtonClicked() {  
 	/*Confirm displays a message and returns true if OK is clicked and a false if Cancel is clicked. 	You might use this for simple input */  
 	var bool=confirm("Are you sure?");
@@ -57,9 +58,9 @@ function confirmButtonClicked() {
 
 		/*retrieve the <div> element with id= “content” and add to it the new <p> element*/
 		var div=document.getElementById("content");
-		div.appendChild(p); } 	
+		div.appendChild(p); 
+	} 	
 		document.getElementById("changeButton").style.visibility="visible";
-	}
 }
 function initBody() {
 	// retrieve the changeButton element from the DOM and hide it
